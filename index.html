@@ -50,8 +50,18 @@ html{
 }
 
 header{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
-    padding:50px 20px;
+    background:
+        linear-gradient(
+            rgba(5,15,35,.80),
+            rgba(5,15,35,.80)
+        ),
+        url('hero-background.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:120px 20px;
     text-align:center;
 }
 
@@ -60,12 +70,21 @@ header h1{
     margin-bottom:15px;
 }
 
-header p{
-    font-size:1.3rem;
-    max-width:800px;
-    margin:auto;
+header h1{
+    font-size:4rem;
 }
 
+header p{
+    font-size:1.3rem;
+    max-width:900px;
+    margin:auto;
+}
+    
+    header h3{
+    color:#93c5fd;
+    font-weight:normal;
+    margin-top:-5px;
+}
 .btn{
     display:inline-block;
     padding:15px 30px;
@@ -74,6 +93,11 @@ header p{
     color:white;
     text-decoration:none;
     border-radius:8px;
+    transition:all .2s ease;
+}
+
+.btn:hover{
+    background:#3b82f6;
 }
 
 section{
@@ -133,7 +157,18 @@ footer{
 </nav>
 
 <header id="home">
+    <img
+    src="innovation-legion-logo.jpg"
+    alt="Innovation Legion"
+    width="200"
+    style="margin-bottom:20px;">
 <h1>Where Innovators Unite</h1>
+
+<h3>
+From breakthrough concepts to real-world opportunities.
+</h3>
+
+
 <p>
 Innovation Legion connects inventors, entrepreneurs, engineers,
 manufacturers, and investors to transform breakthrough ideas into
